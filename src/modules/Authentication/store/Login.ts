@@ -9,6 +9,15 @@ const LoginStore = defineStore(
         isRequestLoading: false,
         isPageLoading: false,
       }
+    },
+    getters: {
+      _isRequestLoading: (state) => state.isRequestLoading,
+      _isPageLoading: (state) => state.isPageLoading,
+    },
+    actions: {
+      async logIn(payload: un) {
+
+      }
     }
   }
 );
