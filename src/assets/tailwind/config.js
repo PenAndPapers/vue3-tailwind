@@ -1,7 +1,6 @@
 module.exports = {
   content: [
-    "../../components/**/*.{vue,js,ts,jsx,tsx}",
-    "../../modules/**/*.{vue,js,ts,jsx,tsx}",
+    "../../src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   presets: [],
   // darkMode: false, // or 'media' or 'class'

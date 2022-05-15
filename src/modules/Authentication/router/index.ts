@@ -1,9 +1,5 @@
 export default [
   {
-    path: "",
-    redirect: "/login",
-  },
-  {
     path: "/",
     name: "Login",
     meta: {

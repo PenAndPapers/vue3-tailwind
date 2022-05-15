@@ -1,5 +1,7 @@
 <template>
-  <button>Click me</button>
+  <div class="user-profile">
+
+  </div>
 </template>
 <script setup lang="ts">
   import { onBeforeMount, onMounted, reactive, ref, watch } from "vue";

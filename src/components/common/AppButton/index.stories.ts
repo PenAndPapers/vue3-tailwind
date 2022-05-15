@@ -1,16 +1,11 @@
-import AppButton from "../components/common/AppButton.vue";
+import AppButton from "./index.vue";
 
 export default {
-  title: 'Example/AppButton',
+  title: 'Example/Buttons',
   component: AppButton,
   // More on argTypes: https://storybook.js.org/docs/vue/api/argtypes
   argTypes: {
-    backgroundColor: { control: 'color' },
-    onClick: {},
-    size: {
-      control: { type: 'select' },
-      options: ['small', 'medium', 'large'],
-    },
+    onClick: {}
   },
 };
 
@@ -23,7 +18,26 @@ const Template = (args) => ({
     return { args };
   },
   // And then the `args` are bound to your component with `v-bind="args"`
-  template: '<AppButton />',
+  template: '<AppButton v-bind="args" />',
 });
 
-export const appButton = Template.bind({});
+export const PrimaryButton = Template.bind({});
+
+PrimaryButton.args = {
+  label: "Primary button",
+  classes: "px-3 py-1 rounded-lg bg-blue-700 hover:bg-blue-600 text-white"
+};
+
+export const SecondaryButton = Template.bind({});
+
+SecondaryButton.args = {
+  label: "Secondary button",
+  classes: "p-2"
+};
+
+export const TertiaryButton = Template.bind({});
+
+TertiaryButton.args = {
+  label: "Tertiary button",
+  classes: "p-3"
+};
